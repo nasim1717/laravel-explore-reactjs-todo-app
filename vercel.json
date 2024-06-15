@@ -6,5 +6,5 @@
             "config": { "distDir": "public" }
         }
     ],
-    "routes": [{ "src": "/(.*)", "dest": "/" }]
+    "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
