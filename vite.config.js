@@ -9,4 +9,12 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.jsx'],
         }),
     ],
+    build: {
+        outDir: 'public', // Output directory for the build files
+    },
+    resolve: {
+        alias: {
+            '@': resolve(__dirname, 'resources/js'),
+        },
+    },
 });
