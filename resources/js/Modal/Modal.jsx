@@ -17,7 +17,7 @@ export default function Modal({ setIsOpenModal, goal }) {
                 const findGoalIndex = goalsData.findIndex(
                     (data) => data.id === goal?.id
                 );
-                goalsData[findGoalIndex] = { ...formData };
+                goalsData[findGoalIndex] = { ...formData, id: goal?.id };
                 setGoalsData([...goalsData]);
             } else {
                 formData.id = crypto.randomUUID();
