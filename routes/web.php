@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('https://laravel-explore-reactjs-todo-app.vercel.app/{any}', function () {
+Route::get('/{any}', function () {
     return view('welcome'); // Change 'app' to the name of your Blade file
 })->where('any', '.*');
 
